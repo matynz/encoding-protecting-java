@@ -1,6 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *
+ * Maneja el flujo del sitema entero para codificar descodificar protejer y desprotejer
+ * Da un orden y avisa si se realizan usos indebidos sin haber realizado pasos previos
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 package teoriadealinfo;
 
@@ -8,10 +15,7 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author matias
- */
+
 public class SistemaTeoInfo {
     ///Objetos a Utilizar
 

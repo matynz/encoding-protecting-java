@@ -1,16 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Maneja el hamminizado y Deshamminizado
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 package teoriadealinfo;
 
 import java.lang.Math.*;
 import java.util.ArrayList;
 
-/**
- *
- * @author matias
- */
 public class Hamming {
 
     Byte g[][];

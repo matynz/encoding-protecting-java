@@ -1,6 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Se encarga de leer el archivo en ASCII y leer y escribir archivos binarios
+ * con solo pasarle las rutas y de donde leer o donde escribir en un string
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 package teoriadealinfo;
 
@@ -13,20 +19,19 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-/**
- *
- * @author matias
- */
+
 public class Archivo {
 
     public String archivo_codificado_loc;
     public ArrayList<String> renglones;
     public File file;
 
+    /** Se puede construir pasandole un archivo - Para ASCII*/
     public Archivo(File f) {
         file = f;
     }
 
+    /** Se puede construir pasandole una lugar donde esta el archivo - Binario */
     public Archivo(String location) {
         archivo_codificado_loc = location;
     }
@@ -35,6 +40,7 @@ public class Archivo {
         archivo_codificado_loc = s;
     }
 
+    /** Escribe una Cadena de 0s y 1s en un archivo binario */
     public boolean escribirArchivo(StringBuilder string_salida) {
         try {
             BitOutputStream out = new BitOutputStream(new BufferedOutputStream(new FileOutputStream(archivo_codificado_loc)));
@@ -49,6 +55,7 @@ public class Archivo {
         return true;
     }
 
+    /** Devuelve una cadena de 0s y 1s con el contenido del archivo binario */
     public StringBuilder leerArchivo() {
         int s;
         StringBuilder i = new StringBuilder("");
@@ -66,6 +73,7 @@ public class Archivo {
         return i;
     }
 
+    /** Deprecado - Doy la orden de leer el archivo ASCII - Devuelvo un array de renglones*/
     public ArrayList<String> leerArchivoASCII() {
         BufferedReader entrada = null;
         ArrayList<String> salida = new ArrayList<String>();
@@ -83,6 +91,7 @@ public class Archivo {
         return salida;
     }
 
+    /**  Doy la orden de leer el archivo ASCII  - Devulevo un solo string con todo el contenido del archivo incluido \n */
     public String leerArchivoASCii() {
         BufferedReader entrada = null;
         StringBuilder salida = new StringBuilder();

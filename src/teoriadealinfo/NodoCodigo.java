@@ -1,14 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Mantiene la triupla
+ * Caracter - Codigo - Frecuencia
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos:	
+ *			- Guido Urquiza
+ *			- Mauricio Soligo
+ *			- Matias Casanova
  */
 
 package teoriadealinfo;
 
-/**
- *
- * @author Mauricio
- */
 public class NodoCodigo {
 
 

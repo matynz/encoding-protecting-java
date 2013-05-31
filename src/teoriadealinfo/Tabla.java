@@ -1,17 +1,23 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+/**
+*
+*   Mantiene y genera la tabla que contiene las triuplas Caracter - Codigo - Frecuencia 
+*
+* Practico de Maquina para Teoria de la Informacion
+* Alumnos: 
+*          - Guido Urquiza
+*          - Mauricio Soligo
+*          - Matias Casanova
+*/
+
+
+
 package teoriadealinfo;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- *
- * @author matias
- */
+
 public class Tabla {
 
     public Archivo archivo;
@@ -34,10 +40,12 @@ public class Tabla {
         ///Blanquear variables
     }
 
+    /** Devuelve la Tabla con todos los Pares Caracter - Codigo - Frecuencia*/
     public ArrayList<NodoCodigo> getTabla() {
         return tabla_codigo;
     }
-
+    
+    /** Calcula las frecuencias */
     public void generarFrecuencias(String texto) {
 
         for (char c : texto.toCharArray()) {
@@ -49,6 +57,7 @@ public class Tabla {
         }
     }
 
+    /** Pasa las letras y frecuencias a la tabla e inserta el EOF */
     public void armarTabla() {
         NodoLetra letra;
         //Armo el Arreglo de Letras
@@ -66,11 +75,13 @@ public class Tabla {
         letras.add(letra);
 
     }
+
+    /** Devuelve las Letras*/
     public ArrayList<NodoLetra> getLetras(){
         return letras;
     }
     
-
+    /** Armo en si la tabla */
     public void cargarFrecuencias() {
         NodoLetra new_letra;
         ArrayList<NodoLetra> letra_s = new ArrayList<NodoLetra>();
@@ -109,6 +120,7 @@ public class Tabla {
 
     }
 
+    /** Escribe en la tabla el codigo correspondiente al caracter siguiendo el arbol arr_aux es la raiz*/
     public void codificarSimbolo(NodoLetra arr_aux, String cadena) {
         NodoCodigo new_codigo;
         if (arr_aux != null) {

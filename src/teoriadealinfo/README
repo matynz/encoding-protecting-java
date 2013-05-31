@@ -6,7 +6,7 @@ Huffman - Clase utilizada para comprimir texto mediante huffman encoding
 
 Hamming - Clase interfaz para protejer mediante hamming
 
-Ruido - clase para insertar ruido blanco en una string (a lo sumo 1 por bloque si esta hamminizado)
+Ruido - clase para insertar ruido blanco en un string de 0s y 1s (a lo sumo 1 por bloque, deberia estar hamminizado)
 
 Arbol - Contiene Metodos para manejar el Arbol usado en Huffman
 
@@ -18,6 +18,6 @@ BitInputStream - Permite leer bit a bit de un archivo binario Usado en Archivo
 
 BitOutputStream - Permite escribir bit a bit en un archivo binario Usado en archivo
 
-NodoLetra - NodoLetra Para El arbol (?  //* Fix
+NodoLetra - Nodo para El arbol contiene la letra y la cantidad
 
-NodoCodigo - Nodo para la Tabla (?  //* Fix
+NodoCodigo - Nodo para la Tabla que contiene la triupla caracter - codigo en binario - frecuencia de aparicion

@@ -1,14 +1,17 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Es un nodo del arbol que contiene Caracter y la cantidad acumulada
+ *
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 
 package teoriadealinfo;
 
-/**
- *
- * @author Mauricio
- */
+
 public class NodoLetra {
 
     public Integer getcant() {

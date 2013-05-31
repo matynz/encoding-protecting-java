@@ -1,17 +1,19 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Libreria para escribir un archivo biniario pasando 0s y 1s
+ *
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 
 package teoriadealinfo;
 
- import java.io.IOException;
- import java.io.OutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
-/**
- *
- * @author Mauricio
- */
 
 /**
  * A stream where bits can be written to. Because they are written to an underlying byte stream, the end of the stream is padded with 0's up to a multiple of 8 bits. The bits are written in big endian.

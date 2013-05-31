@@ -1,18 +1,26 @@
 /**
- * Arbol
+ * 
+ * Mantiene y organiza el arbol para codificar los caracteres
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
+
 package teoriadealinfo;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author matias
- */
+
 public class Arbol {
 
     public NodoLetra raiz;
 
+    /** Ordena el array con nodoLetras(contiene la letra y la cantidad)
+     *  de menor a Mayor
+     */
     private ArrayList<NodoLetra> ordenarArray(ArrayList<NodoLetra> arr_aux) {
 
         NodoLetra aux_letra;
@@ -35,9 +43,13 @@ public class Arbol {
 
     }
 
+    /** 
+     *  Ordena el ultimo elemento en el ultimo lugar donde corresponde Aqui
+     *  nodoLetra  en el caracter puede tener una cadena que represenat a sus hijos
+     */  
     private ArrayList<NodoLetra> insertarEnArray(ArrayList<NodoLetra> arr_aux) {
-        NodoLetra aux_letra ;
-        for (int aux = arr_aux.size() - 1; aux > 1; aux--) {
+        NodoLetra aux_letra ;         
+        for (int aux = arr_aux.size() - 1; aux > 1;aux--) {
 
             if (arr_aux.get(aux - 1).getcant() > arr_aux.get(aux).getcant()) {
                 aux_letra = arr_aux.get(aux);
@@ -60,6 +72,7 @@ public class Arbol {
 
     }
 
+    /** El proceso que agrupa a los 2 nodos con menor cantidad */
     public ArrayList<NodoLetra> codificarArbol(ArrayList<NodoLetra> arr_aux) {
         NodoLetra new_nodo;
         int aux = 0;

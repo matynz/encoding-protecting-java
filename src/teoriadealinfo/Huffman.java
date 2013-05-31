@@ -1,6 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 package teoriadealinfo;
 
@@ -8,10 +11,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- *
- * @author matias
- */
+
 public class Huffman {
 
     public HashMap<String, String> map_codigo = new HashMap<String, String>();

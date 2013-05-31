@@ -1,14 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *  Libreria para leer en binario 0s y 1s desde un archivo binario
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos: 
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 
 package teoriadealinfo;
 
-/**
- *
- * @author Mauricio
- */
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;

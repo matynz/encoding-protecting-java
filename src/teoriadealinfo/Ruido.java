@@ -1,20 +1,28 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *  Inserta Ruido en un string de 0s y 1s
+ *
+ * Practico de Maquina para Teoria de la Informacion
+ * Alumnos:
+ *          - Guido Urquiza
+ *          - Mauricio Soligo
+ *          - Matias Casanova
  */
 package teoriadealinfo;
 
 import java.util.Random;
 
-/**
- *
- * @author matias
- */
 public class Ruido {
 
     public Ruido() {
     }
 
+    /**
+     *
+     *  Detecta los bloques como de tamaño de Bloque  y se compone por 7 bits al comienzo que definen
+     *  tamaño del bloque y luego n bloques de tamaño de bloque
+     *
+     *
+     */
     public static String insertar(String s, int bloque) {
         StringBuilder ent = new StringBuilder(s);
         bloque = bloque - 1;
